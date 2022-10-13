@@ -1,6 +1,14 @@
 require("nvim-tree").setup({
     hijack_cursor = true,
     sync_root_with_cwd = true,
+    filters = {
+        custom = {
+            '.aux',
+            '.fdb_latexmk ',
+            '.fls ',
+            '.synctex.gz ',
+        }
+    },
     ignore_ft_on_setup = {
         "startify",
         "dashboard",

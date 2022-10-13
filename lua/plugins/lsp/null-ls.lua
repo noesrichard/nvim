@@ -6,10 +6,8 @@ local completion = nls.builtins.completion
 
 nls.setup({
     sources = {
-        formatting.stylua,
         formatting.black,
         diagnostics.eslint,
-        completion.spell
     }
 })
 

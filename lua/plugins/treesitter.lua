@@ -20,6 +20,9 @@ require('nvim-treesitter.configs').setup({
     highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,
+        disable = {
+            "latex"
+        },
     },
     indent = {
         enable = true,
@@ -41,6 +44,7 @@ require('nvim-treesitter.configs').setup({
     autotag = {
         enable = true,
     },
+
 
     -- nvim-treesitter/nvim-treesitter-refactor
     refactor = {

@@ -22,7 +22,8 @@ local servers = {
     "angularls",
     "pyright",
     "tsserver",
-    "sumneko_lua"
+    "sumneko_lua",
+    "texlab",
 }
 
 mason.setup()

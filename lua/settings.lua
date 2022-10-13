@@ -8,7 +8,7 @@ vim.cmd([[ autocmd VimEnter * hi NonText guifg=bg ]])
 -- vim.cmd([[ autocmd FileType NvimTree setlocal winhighlight=Normal:NvimTreeBg ]])
 -- Hide statusline by setting laststatus and cmdheight to 0.
 --o.ls = 0
-o.ch = 0
+--o.ch = 0
 
 
 -- Set the winbar to the statusline.

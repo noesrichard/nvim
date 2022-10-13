@@ -32,7 +32,8 @@ local aliases = {
     nvim_lsp = 'LSP',
     luasnip = 'Snippet',
     nvim_lsp_signature_help = "Signature",
-    buffer = "BR"
+    buffer = "BR",
+    latex_symbols = "LTX Sym"
 }
 
 cmp.setup({
@@ -62,9 +63,9 @@ cmp.setup({
         { name = 'nvim_lsp', max_item_count = 10 },
         { name = 'path', max_item_count = 10 },
         { name = 'buffer', max_item_count = 3 },
-        {
-            name = 'nvim_lsp_signature_help',
-        }
+        { name = 'nvim_lsp_signature_help' },
+        { name = 'latex_symbols', max_item_count = 3 },
+        { name = 'omni', },
     }),
 
     experimental = {

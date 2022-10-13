@@ -123,6 +123,7 @@ return packer.startup(function(use)
         { 'hrsh7th/cmp-path', after = 'nvim-cmp' },
         { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' },
         { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' },
+        { 'hrsh7th/cmp-omni', after = 'nvim-cmp' },
         { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' },
         {
             'hrsh7th/cmp-nvim-lsp-signature-help',
@@ -196,5 +197,19 @@ return packer.startup(function(use)
         end
     })
 
+
+    use({
+        "nvim-neorg/neorg",
+        ft = "norg",
+        after = "nvim-treesitter", -- You may want to specify Telescope here as well
+        config = function()
+            require('plugins.neorg')
+        end
+    })
+
+
+    use('kdheepak/cmp-latex-symbols')
+
+    use('lervag/vimtex')
 
 end)
