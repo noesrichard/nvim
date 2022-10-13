@@ -3,6 +3,12 @@ local file_browser_actions = telescope.extensions.file_browser.actions
 
 telescope.setup {
     defaults = {
+
+
+        path_display = function(opts, path)
+            local tail = require("telescope.utils").path_tail(path)
+            return string.format("%s (%s)", tail, path)
+        end,
         file_ignore_patterns = {
             ".git/",
             "target/",
@@ -132,4 +138,3 @@ telescope.setup {
         }
     }
 }
-

@@ -13,7 +13,7 @@ nmap("<leader>so", ":write | source %<CR>")
 nmap("<leader>q", ":quit<CR>")
 nmap("<leader><Enter>", "o<Esc>")
 nmap("<leader>cf",
-    ":tabnew | edit ~/AppData/Local/nvim/lua/plugins.lua | tcd ~/AppData/Local/nvim/ | vsplit $MYVIMRC | split ~/AppData/Local/nvim/lua/mappings.lua <CR>")
+    ":tabnew | tcd ~/AppData/Local/nvim/ | edit lua/plugins.lua  | vsplit init.lua | split lua/mappings.lua <CR>")
 --map
 --nmap("<leader>cf" , ":tabnew | e $MYVIMRC |  NvimTreeFindFile <CR>")
 

@@ -2,7 +2,11 @@ require('bufferline').setup {
     options = {
         mode = "tabs",
         buffer_close_icon = '',
-        separator_style = '|',
+        --sort_by = 'id',
+        indicator = {
+            style = 'underline'
+        },
+        separator_style = { '', '' },
         offsets = {
             {
                 filetype = "NvimTree",
@@ -15,4 +19,3 @@ require('bufferline').setup {
     },
 
 }
-

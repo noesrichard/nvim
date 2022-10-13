@@ -1,4 +1,4 @@
-local colors = require("tokyonight.colors").setup() 
+local colors = require("tokyonight.colors").setup()
 require('plugins.misc')
 
 require('startup').setup({
@@ -10,19 +10,19 @@ require('startup').setup({
         fold_section = false,
         title = "Header",
         margin = 5,
-        content = que_vas_a_saber_de_neovim, 
+        content = que_vas_a_saber_de_neovim,
         highlight = "Keyword",
         default_color = "#56b6c2",
         oldfiles_amount = 0,
     },
-    picture = { 
+    picture = {
         type = "text",
         oldfiles_directory = false,
         align = "center",
         fold_section = false,
         title = "Picture",
         margin = 5,
-        content = calamardo, 
+        content = calamardo,
         highlight = "",
         default_color = "#ffffff",
         oldfiles_amount = 0,
@@ -39,10 +39,10 @@ require('startup').setup({
             { " Find File", "Telescope find_files", "<leader>fl" },
             { " Recent Files", "Telescope oldfiles", "<leader>rf" },
             { " File Browser", "Telescope file_browser", "<leader>." },
-            { 
+            {
                 "  Configuration",
-                "edit ~/AppData/Local/nvim/lua/plugins.lua | tcd ~/AppData/Local/nvim/ | vsplit $MYVIMRC | split ~/AppData/Local/nvim/lua/mappings.lua  ",
-                "<leader>cf" 
+                "cd C:/Users/carri/AppData/Local/nvim/ | edit lua/plugins.lua |  vsplit init.lua | split lua/mappings.lua  ",
+                "<leader>c"
             },
         },
         highlight = "String",
@@ -83,5 +83,5 @@ require('startup').setup({
         folded_section = "#ffffff",
     },
 
-    parts = { "header","picture", "body", },
+    parts = { "header", "picture", "body", },
 })

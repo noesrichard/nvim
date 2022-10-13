@@ -207,9 +207,18 @@ return packer.startup(function(use)
         end
     })
 
+    --
+    -- use({
+    --     'kdheepak/cmp-latex-symbols',
+    --     ft = { 'tex' },
+    --     config = function ()
+    --         require('plugins.lsp.cmp-latex')
+    --     end
+    -- })
 
-    use('kdheepak/cmp-latex-symbols')
-
-    use('lervag/vimtex')
+    use({
+        'lervag/vimtex',
+        ft = { 'tex' }
+    })
 
 end)
