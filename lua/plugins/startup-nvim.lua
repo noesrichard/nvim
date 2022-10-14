@@ -35,7 +35,7 @@ require('startup').setup({
         title = "Basic Commands",
         margin = 5,
         content = {
-            { " Projects", "lua require'telescope'.extensions.project.project{ }", "<leader>pj" },
+            { " Projects", "lua require'telescope'.extensions.project.project{ display_type = 'full' }", "<leader>pj" },
             { " Find File", "Telescope find_files", "<leader>fl" },
             { " Recent Files", "Telescope oldfiles", "<leader>rf" },
             { " File Browser", "Telescope file_browser", "<leader>." },
